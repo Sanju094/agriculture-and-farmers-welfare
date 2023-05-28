@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Order form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,200&family=Quicksand&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* form {
+            margin: 0px;
+            padding: 15px;
+        }
+
+        #container-fluid {
+            margin: 0;
+            padding: 50px;
+        }
+       */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #navbar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+    opacity: 0.6;
+  }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand"><b><img src="./WTLogo.PNG" height="55px" width="100px"></b></a>
+          <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+    
+              <li class="nav-item">
+                <a class="nav-link" href="./Home.html" style="color:black">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./scheme.html" style="color:black">SCHEMES</a>
+              </li>
+    
+              <div class="dropdown">
+                <a class=" btn dropdown-toggle light" style="color:black;" href="#" role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  MAJOR CROPS
+                </a>
+    
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Wheat.html">Wheat</a></li><br>
+                  <li><a class="dropdown-item" href="Millets.html">Coarse Cereals / Millets </a></li><br>
+                  <li><a class="dropdown-item" href="Pulses.html">Pulses</a></li><br>
+                  <li><a class="dropdown-item" href="Rice.html">Rice</a></li><br>
+                  <li><a class="dropdown-item" href="Sugarcane.html">Sugarcane</a></li>
+                </ul>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" href="./hours.html" style="color:black">ABOUT</a>
+    
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./form.html" style="color:black">FEEDBACK</a>
+              </li>
+    
+              <div class="dropdown">
+                <a class=" btn dropdown-toggle light" style="color:black;" href="./menu.html" role="button"
+                  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  OTHER LINKS
+                </a>
+    
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.tn.gov.in/department/2">Agriculture and Farmers Welfare
+                      department Tamilnadu</a></li><br>
+                  <li><a class="dropdown-item" href="https://agricoop.gov.in/">Department Of Agriculture And Farmers
+                      Welfare India </a></li><br>
+                  <li><a class="dropdown-item" href="https://agricoop.gov.in/">Department Of Agriculture And Farmers
+                      Welfare Haryana</a></li><br>
+                  <li><a class="dropdown-item" href="https://eands.dacnet.nic.in/">Directorate of E&S Farmer Welfare</a>
+                  </li>
+                </ul>
+              </div>
+    
+    
+            </ul>
+            <button class="btn p-2 my-lg-0 my-2 bg-light"><a href="./menu.html" target="blank">LOG IN</a></button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+          </div>
+        </div>
+      </nav>
+    <!-----------------------            ----------------->
+    <br>
+    <h4>Enter Your Details to Get Your Products Delivered !!</h4>
+    <br>
+    <br>
+    <div class="bg-img">
+        <div class="container-fluid col-12">
+            <div class="form" style="padding-left: 150px;">
+
+                <div class="col-lg-12 col-md-4">
+                    <form class="row g-3 needs-validation" name="f1" method="post" onsubmit="fun()" action="http://localhost:4001">
+                        <div class="col-md-10">
+                            <label for="fname" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="fname" name="fname" required
+                                pattern="[A-Za-z]{3,20}" placeholder="enter your firstname">
+
+                        </div>
+
+                        <br>
+
+                        <br>
+                        
+                        </div>
+                        <div class="col-md-10">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" class="form-control" id="city" name="city" required
+                                pattern="[A-Za-z]{3,20}" placeholder="enter your city">
+
+                        </div>
+                        <br>
+                        <div class="col-md-10">
+                            <label for="address" class="form-label">Address</label>
+                            <textarea class="form-control" id="validationTextarea"
+                                placeholder="Enter your present residential address." name="add"
+                                required></textarea>
+
+                        </div>
+                        <br>
+                        <div class="col-md-3">
+                            <label for="state" class="form-label">State</label>
+                            <select class="form-select" id="state" name="state" required>
+                                <option value="Andhra Pradesh" selected>Andhra Pradesh</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="West Bengal">West Bengal</option>
+
+                            </select>
+
+                        </div>
+<br>
+                        <div class="col-md-3">
+                            <label for="pincode">Pincode</label>
+                            <input type="number" class="form-control" id="pincode" name="pin" pattern="[0-9]{6}"
+                                required placeholder="enter pincode">
+
+                        </div>
+
+                        
+<br>
+                        <div class="col-md-4">
+                            <label for="mobileno" class="form-label">Mobile no</label>
+                            <input type="tel" class="form-control" id="mobileno" name="mno" required
+                                placeholder="Enter your Mobile no" pattern="[6789]{1}[0-9]{1 0}">
+
+                        </div>
+<br>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Check me out
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-12">
+                            <button type="reset" class="btn btn-primary">Clear All</button>
+                            <button class="btn btn-primary" type="submit" id="myBtn">Place order</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function fun() {
+            alert("Registration successfull!");
+            return true;
+        }
+    </script>
+
+</body>
+
+</html>

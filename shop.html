@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand"><b><img src="./WTLogo.PNG" height="55px" width="100px"></b></a>
+      <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="./Home.html" style="color:black">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./scheme.html" style="color:black">SCHEMES</a>
+          </li>
+
+          <div class="dropdown">
+            <a class=" btn dropdown-toggle light" style="color:black;" href="#" role="button" id="dropdownMenuLink"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              MAJOR CROPS
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Wheat.html">Wheat</a></li><br>
+              <li><a class="dropdown-item" href="Millets.html">Coarse Cereals / Millets </a></li><br>
+              <li><a class="dropdown-item" href="Pulses.html">Pulses</a></li><br>
+              <li><a class="dropdown-item" href="Rice.html">Rice</a></li><br>
+              <li><a class="dropdown-item" href="Sugarcane.html">Sugarcane</a></li>
+            </ul>
+          </div>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html" style="color:black">ABOUT</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./shop.html" style="color:black">SHOP</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./subsidy.html" style="color:black">SUBSIDY</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./form.html" style="color:black">FEEDBACK</a>
+          </li>
+
+          <div class="dropdown">
+            <a class=" btn dropdown-toggle light" style="color:black;" href="./menu.html" role="button"
+              id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              OTHER LINKS
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://www.tn.gov.in/department/2">Agriculture and Farmers Welfare
+                  department Tamilnadu</a></li><br>
+              <li><a class="dropdown-item" href="https://agricoop.gov.in/">Department Of Agriculture And Farmers
+                  Welfare India </a></li><br>
+              <li><a class="dropdown-item" href="https://agricoop.gov.in/">Department Of Agriculture And Farmers
+                  Welfare Haryana</a></li><br>
+              <li><a class="dropdown-item" href="https://eands.dacnet.nic.in/">Directorate of E&S Farmer Welfare</a>
+              </li>
+            </ul>
+          </div>
+
+
+        </ul>
+        <button class="btn p-2 my-lg-0 my-2 bg-light"><a href="./menu.html" target="blank">LOG IN</a></button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </div>
+    </div>
+  </nav>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h1>SHOP YOUR FERTILIZERS HERE!!<span>.</span></h1>
+          <h2>With Low Cost!</h2>
+        </div>
+      </div>
+
+      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-store-line"></i>
+            <h3><a href="#oferti">Organic Fertilizers & Pesticides</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-bar-chart-box-line"></i>
+            <h3><a href="#iferti">InOrganic Fertilizers & Pesticides</a></h3>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- End Hero -->
+  <BR><BR><BR><BR>
+
+  <section id="oferti" class="container col-9">
+    <div class="row">
+      <h1 class="display-5"><b>
+          <center>ORGANIC FERTILIZERS</center>
+        </b></h1>
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/f1.webp" class="card-img-top" height="285">
+          </div>
+
+          <div class="card-body">
+            <h4 class="card-title">price: ₹300</h4>
+            <p class="card-text">Fertilizer cum Pesticide 5kgs</p>
+            <button onclick="addToCart(300, 'Fertilizer cum Pesticide 5kgs')" class="btn btn-success">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/f2.webp" class="card-img-top" height="285">
+          </div>
+
+
+          <div class="card-body">
+            <h4 class="card-title">price: ₹150</h4>
+            <p class="card-text">Bio-Organics 2kgs
+            </p>
+            <button onclick="addToCart(150, 'Bio-Organics 2kgs')" class="btn btn-success">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/f3.webp" class="card-img-top" height="285px"></a>
+          </div>
+
+
+          <div class="card-body">
+            <h3 class="card-title">Price: ₹400</h3>
+            <p class="card-text">vermicompost 4kgs
+            </p>
+            <button onclick="addToCart(400, 'vermicompost 4kgs')" class="btn btn-success">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/f4.webp" class="card-img-top" height="285px"></a>
+          </div>
+
+
+          <div class="card-body">
+            <h3 class="card-title">Price: ₹250</h3>
+            <p class="card-text">Plant Compost</p>
+            <button onclick="addToCart(250, 'Plant Compost')" class="btn btn-success">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
+
+    <div class="row">
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/f5.webp" class="card-img-top" height="285">
+          </div>
+
+          <div class="card-body">
+            <h4 class="card-title">price: ₹530</h4>
+            <p class="card-text">vermicompost</p>
+            <button onclick="addToCart(530, 'vermicompost')" class="btn btn-success">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/f6.webp" class="card-img-top" height="285">
+          </div>
+
+
+          <div class="card-body">
+            <h4 class="card-title">price: ₹390</h4>
+            <p class="card-text">jeevamirtham
+            </p>
+            <button onclick="addToCart(390, 'jeevamirtham')" class="btn btn-success">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/f7.jpg" class="card-img-top" height="285px"></a>
+          </div>
+
+
+          <div class="card-body">
+            <h3 class="card-title">Price: ₹900</h3>
+            <p class="card-text">Humates</p>
+            <button onclick="addToCart(900, 'Humates')" class="btn btn-success">Buy Now</button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/f8.jpg" class="card-img-top" height="285px"></a>
+          </div>
+
+
+          <div class="card-body">
+            <h3 class="card-title">Price: ₹400</h3>
+            <p class="card-text">Plant Fertilizer
+            </p>
+            <button onclick="addToCart(400, 'plant Fertilizer')" class="btn btn-success">Buy Now</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/p1.jpg" class="card-img-top" height="285">
+          </div>
+
+          <div class="card-body">
+            <h4 class="card-title">price: ₹160</h4>
+            <p class="card-text">Fertilizer Bio</p>
+            <button onclick="addToCart(160, 'Fertilizer Bio')" class="btn btn-success">Buy Now</button>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/p2.jpg" class="card-img-top" height="285">
+          </div>
+
+
+          <div class="card-body">
+            <h4 class="card-title">price: ₹350</h4>
+            <p class="card-text">Growth Promoter
+            </p>
+            <button onclick="addToCart(350, 'Growth Promoter')" class="btn btn-success">Buy Now</button>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/p3.jpg" class="card-img-top" height="285px"></a>
+          </div>
+
+
+          <div class="card-body">
+            <h3 class="card-title">Price: ₹580</h3>
+            <p class="card-text">Natural pesticide & fungicide
+            </p>
+            <button onclick="addToCart(580, 'Natural pesticide & fungicide')" class="btn btn-success">Buy Now</button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/p4.jpg" class="card-img-top" height="285px"></a>
+          </div>
+
+
+          <div class="card-body">
+            <h3 class="card-title">Price: ₹100</h3>
+            <p class="card-text">Neem oil
+            </p>
+            <button onclick="addToCart(100, 'Neem oil')" class="btn btn-success">Buy Now</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/p5.jpg" class="card-img-top" height="285">
+          </div>
+
+          <div class="card-body">
+            <h4 class="card-title">price: ₹80</h4>
+            <p class="card-text">Fly Super</p>
+            <button onclick="addToCart(300, 'Neem oil')" class="btn btn-success">Buy Now</button>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/p6.jpg" class="card-img-top" height="285">
+          </div>
+
+
+          <div class="card-body">
+            <h4 class="card-title">price: ₹120</h4>
+            <p class="card-text">Natural agro solution
+            </p>
+            <button onclick="addToCart(120, 'Natural agro solution')" class="btn btn-success">Buy Now</button>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/p7.jpg" class="card-img-top" height="285px"></a>
+          </div>
+
+
+          <div class="card-body">
+            <h3 class="card-title">Price: ₹300</h3>
+            <p class="card-text">Bio Pesticide
+            </p>
+            <button onclick="addToCart(300, 'Bio Pesticide')" class="btn btn-success">Buy Now</button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/p8.jpg" class="card-img-top" height="285px"></a>
+          </div>
+
+
+          <div class="card-body">
+            <h3 class="card-title">Price: ₹430</h3>
+            <p class="card-text">All shooter(Extract)
+            </p>
+            <button onclick="addToCart(430, 'All shooter(Extract)')" class="btn btn-success">Buy Now</button>
+
+          </div>
+        </div>
+      </div>
+      <h2>Cart:&nbsp;<span id="cart">product</span></h2>
+  
+  
+  <h2>Total Price: ₹<span id="totalPrice">0.00</span></h2>
+
+    </div>
+  </section>
+  <center><button class="btn btn-danger"><a href="./order.html" >Place Order</a></button></center>
+  <br><br><br><br>
+
+  <!-- inorganic fertilizers -->
+  <section id="iferti" class="container col-9">
+    <div class="row">
+      <h1 class="display-5"><b>
+          <center>INORGANIC FERTILIZERS & PESTICIDES</center>
+        </b></h1>
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/if1.webp" class="card-img-top" height="285">
+          </div>
+
+          <div class="card-body">
+            <h4 class="card-title">price: ₹590</h4>
+            <p class="card-text">Ammonium Sulphate</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/if2.webp" class="card-img-top" height="285">
+          </div>
+
+
+          <div class="card-body">
+            <h4 class="card-title">price: ₹350</h4>
+            <p class="card-text">Monophosphate
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/if3.jpg" class="card-img-top" height="285px"></a>
+          </div>
+
+
+          <div class="card-body">
+            <h3 class="card-title">Price: ₹800</h3>
+            <p class="card-text">Sea weed extract
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/if4.jpg" class="card-img-top" height="285px"></a>
+          </div>
+
+
+          <div class="card-body">
+            <h3 class="card-title">Price: ₹700</h3>
+            <p class="card-text">Multi Micronutrients Fetilizer
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
+
+    <div class="row">
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/if5.jpg" class="card-img-top" height="285">
+          </div>
+
+          <div class="card-body">
+            <h4 class="card-title">price: ₹300</h4>
+            <p class="card-text">Ammonium Sulphate</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/if6,jpg.webp" class="card-img-top" height="285">
+          </div>
+
+
+          <div class="card-body">
+            <h4 class="card-title">price: ₹270</h4>
+            <p class="card-text">Leaf fertilizer
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/if7.jpg" class="card-img-top" height="285px"></a>
+          </div>
+
+
+          <div class="card-body">
+            <h3 class="card-title">Price: ₹490</h3>
+            <p class="card-text">Paris Sparsha
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/ip1.webp" class="card-img-top" height="285px"></a>
+          </div>
+
+
+          <div class="card-body">
+            <h3 class="card-title">Price: ₹300</h3>
+            <p class="card-text">Quickphos(Aluminium Phosphide)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/ip2.jpg" class="card-img-top" height="285">
+          </div>
+
+          <div class="card-body">
+            <h4 class="card-title">price: ₹600</h4>
+            <p class="card-text">Monochrotophos(hydrochloride)</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/ip3.jpg" class="card-img-top" height="285">
+          </div>
+
+
+          <div class="card-body">
+            <h4 class="card-title">price: ₹350</h4>
+            <p class="card-text">Monocrotophos
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/ip4.jpg" class="card-img-top" height="285px"></a>
+          </div>
+
+
+          <div class="card-body">
+            <h3 class="card-title">Price: ₹450</h3>
+            <p class="card-text">Magnesium Phosphate(2kgs)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/ip5.jpg" class="card-img-top" height="285px"></a>
+          </div>
+
+
+          <div class="card-body">
+            <h3 class="card-title">Price: ₹500</h3>
+            <p class="card-text">Ekalux
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/ip6.jpg" class="card-img-top" height="285">
+          </div>
+
+          <div class="card-body">
+            <h4 class="card-title">price: ₹200</h4>
+            <p class="card-text">Kemcron</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/ip7.jpg" class="card-img-top" height="285">
+          </div>
+
+
+          <div class="card-body">
+            <h4 class="card-title">price: ₹150</h4>
+            <p class="card-text">Monosell
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/ip8.jpg" class="card-img-top" height="285px"></a>
+          </div>
+
+
+          <div class="card-body">
+            <h3 class="card-title">Price: ₹250</h3>
+            <p class="card-text">ROGOR Dimathoate(Insecticide)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 my-3" height="380">
+        <div class="card shadow">
+          <div class="inner">
+            <img src="./img/ip9.jpg" class="card-img-top" height="285px"></a>
+          </div>
+
+
+          <div class="card-body">
+            <h3 class="card-title">Price: ₹400</h3>
+            <p class="card-text">Tim-Bor Professional
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+
+
+    <script>
+      var totalprice = 0;
+      function addToCart(price,name) 
+      {
+      var totalPriceElement = document.getElementById('totalPrice');
+      var totalPrice = parseFloat(totalPriceElement.textContent);
+      document.getElementById('cart').innerHTML=name;
+      totalPrice += price;
+     
+      totalPriceElement.textContent = totalPrice.toFixed(2);
+    }
+    </script>
+</body>
+
+</html>

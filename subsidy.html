@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        #hero {
+            width: 100%;
+            height: 100vh;
+            background: url("./img/subs.jpg") top center;
+            background-size: cover;
+            position: relative;
+        }
+
+        #hero:before {
+            content: "";
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        #hero .container {
+            position: relative;
+            padding-top: 74px;
+            text-align: center;
+        }
+
+        #hero h1 {
+            margin: 0;
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 64px;
+            color: #fff;
+        }
+
+
+        #hero h2 {
+            color: rgba(255, 255, 255, 0.9);
+            margin: 10px 0 0 0;
+            font-size: 24px;
+        }
+
+
+
+
+        #navbar {
+            position: sticky;
+            top: 0;
+            background-color: white;
+            z-index: 10;
+            opacity: 0.6;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand"><b><img src="./WTLogo.PNG" height="55px" width="100px"></b></a>
+            <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Home.html" style="color:black">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./scheme.html" style="color:black">SCHEMES</a>
+                    </li>
+
+                    <div class="dropdown">
+                        <a class=" btn dropdown-toggle light" style="color:black;" href="#" role="button"
+                            id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            MAJOR CROPS
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Wheat.html">Wheat</a></li><br>
+                            <li><a class="dropdown-item" href="Millets.html">Coarse Cereals / Millets </a></li><br>
+                            <li><a class="dropdown-item" href="Pulses.html">Pulses</a></li><br>
+                            <li><a class="dropdown-item" href="Rice.html">Rice</a></li><br>
+                            <li><a class="dropdown-item" href="Sugarcane.html">Sugarcane</a></li>
+                        </ul>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html" style="color:black">ABOUT</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./subsidy.html" style="color:black">SUBSIDY</a>
+            
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./shop.html" style="color:black">SHOP</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./form.html" style="color:black">FEEDBACK</a>
+                    </li>
+
+                    <div class="dropdown">
+                        <a class=" btn dropdown-toggle light" style="color:black;" href="./menu.html" role="button"
+                            id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            OTHER LINKS
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.tn.gov.in/department/2">Agriculture and
+                                    Farmers Welfare
+                                    department Tamilnadu</a></li><br>
+                            <li><a class="dropdown-item" href="https://agricoop.gov.in/">Department Of Agriculture And
+                                    Farmers
+                                    Welfare India </a></li><br>
+                            <li><a class="dropdown-item" href="https://agricoop.gov.in/">Department Of Agriculture And
+                                    Farmers
+                                    Welfare Haryana</a></li><br>
+                            <li><a class="dropdown-item" href="https://eands.dacnet.nic.in/">Directorate of E&S Farmer
+                                    Welfare</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </ul>
+                <button class="btn p-2 my-lg-0 my-2 bg-light"><a href="./menu.html" target="blank">LOG IN</a></button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            </div>
+        </div>
+    </nav>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+                <div class="col-xl-6 col-lg-8">
+                    <h1>We Guide to Understand Agriculture & Farmer Subsidies In India<span>.</span></h1>
+                    <h2>Scroll Down!!</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+
+    <section id="adds">
+        <div class="row">
+            <h1 class="display"><b>
+                    <center>Subsidies that farmers can avail are!!</center>
+                </b></h1>
+
+            <div class="container col-4" class="col-md-4 my-4">
+                <div class="card shadow">
+                    <div class="inner">
+                        <img src="img/s1.jpg" class="card-img-top"></a>
+                    </div>
+
+                    <div class="card-body">
+                        <h3 class="card-title">Subsidies</h3>
+                        <ul class="card-text">
+                            <li><a href="#fertili">Fertilizer Subsidy</a></li>
+                            <li><a href="#power">Power Subsidy</a></li>
+                            <li><a href="#agriequip">Agriculture equipment Subsidy</a></li>
+                            <li><a href="#irriga">Irrigation Subsidy</a></li>
+                            <li><a href="#seed">Seed subsidy</a></li>
+                            <li><a href="#export">Export subsidy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <!-- contents -->
+    <section id="fertili">
+        <div class="container col-9">
+            <div class="row">
+                <div class="col-lg-8 col-md-6 col-12 order-1 pt-5">
+                    <h3 class="display-11">Fertilizer Subsidy</h3>
+                    <br>
+                    <p>Under a federally subsidized program, the central government pays fertilizer
+                        companies to sell their products to farmers at below-market prices. The central government
+                        provides
+                        fertilizer manufacturers and importers subsidies so that farmers can buy them
+                        reasonably.&nbsp;Distribution
+                        of low-cost chemical or non-chemical fertilizers to farmers.<br>It is the difference between the
+                        price paid to the fertilizer manufacturers (local or international) and the price charged to the
+                        farmers. The rest of the burden will be borne by the government. This subsidy ensures the
+                        following:&nbsp; </p>
+                    <ul>
+                        <li>Affortable Information for farmers</li>
+                        <li>Stability in fertilizer prices</li>
+                        <li>Reasonable returns in prepartion</li>
+                        <li>Availability of adequate quantities of fertilizers as per the requirement of the
+                            farmers.&nbsp;</li>
+                    </ul>
+                    <p>The central government bears fertilizer subsidies. The need for fertilizer subsidy arises from
+                        the government’s fertilizer pricing policy. The fertilizer price policy is being implemented
+                        with the following two objectives:&nbsp;</p>
+                    <br>
+                    <ol>
+                        <li>To provide fertilizers at a low and affordable cost to farmers to encourage their use and
+                            increase production.&nbsp;</li>
+                        <li>They are ensuring fair returns on investment made by the fertilizer industry to attract more
+                            investment in the fertilizer industry.&nbsp;</li>
+                    </ol>
+                    <p>To achieve the first objective, the government keeps the selling prices of fertilizers stable and
+                        uniformly low across the country.&nbsp;</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 order-1 pt-5">
+                    <img src="./img/fertisub.jpg">
+                    <br><br><br><br>
+                    <img src="./img/ferti.jpg" width="300px" class="img-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- power subsidy -->
+    <br><br><br><br>
+    <section id="power">
+        <div class="container col-9">
+            <div class="row">
+                <h3 class="display-11">Power Subsidy</h3>
+
+                <div class="col-lg-4 col-md-6 col-12 order-1 pt-5">
+                    <img src="./img/solar.jpg">
+                    <br><br><br><br>
+                    <img src="./img/elec.jpg" width="300px" class="img-circle">
+                </div>
+                <div class="col-lg-8 col-md-6 col-12 order-1 pt-5">
+                    <br>
+                    <p>A power subsidy refers to the government receiving a reduced rate for the electricity supplied to
+                        farmers. Farmers mainly use electricity for irrigation purposes. It is the difference between
+                        the cost of generation and distribution of electricity to farmers and the price charged to
+                        farmers. State Electricity Boards (SEBs) either generate or purchase electricity from other
+                        producers such as NHPC and NTPC.
+                    </p>
+                    <br>
+                    <p>The power subsidy “incentivizes farmers to invest in borewells, pumping sets, tube-wells,
+                        etc. Power subsidy is given on the power used to draw groundwater. Accordingly, it is a
+                        subsidy for privately drawn and privately owned sources of irrigation. Power subsidy is the
+                        difference between the price paid by the farmer for using electricity and the actual cost of
+                        generating electricity. </p>
+                    <br>
+                    <p>
+                        The sustainability of electricity subsidies has come under a lot of pressure in recent years,
+                        mainly due to the poor financial health of state electricity boards.&nbsp;States like Punjab and
+                        Tamil Nadu have provided free electricity to farmers, leading to wastage and financial loss to
+                        state electricity boards.&nbsp;
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- agriculture equipment -->
+    <section id="agriequip">
+        <div class="container col-9">
+            <div class="row">
+                <div class="col-lg-8 col-md-6 col-12 order-1 pt-5">
+                    <h3 class="display-11">Agriculture & Equipment Subsidy</h3>
+                    <br>
+                    <p>The subsidy is provided to farmers by state governments under the Sub Mission on Agricultural
+                        Mechanization (SMAM), Rashtriya Krishi Vikas Yojana (RKVY), and the National Food Security
+                        Mission for the purchase of various agricultural implements and machinery. (NFSM), The mission
+                        for Integrated Development of Horticulture (MIDH) and National Mission on Oilseeds and Oil Palms
+                        (NMOOP).&nbsp;</p>
+                    <p>The government is helping farmers by providing subsidies for machinery purchases to improve farm
+                        inputs and farm power availability. Under the UP Krishi Machinery Subsidy Scheme, farmers are
+                        provided the benefit of subsidy on agricultural machinery through tokens. To help small and
+                        backward farmers, the government has taken the initiative of providing machine subsidies.&nbsp;
+                    </p>
+
+                    <p>The Government of India and the State Governments launch several schemes to help alleviate the
+                        farmers’ plight. Thus, it focuses on each segment of the agricultural scheme. In every
+                        sub-division, from procurement of raw materials to transportation and marketing of produce,
+                        subsidies are available. Additionally, Haryana, the largest agricultural producer in the
+                        country, is adopting modern machinery to encourage agricultural growth. </p>
+                    <p>Thus, a few schemes like RKVY, Crop Diversification, State Plan, and NFSM support ISOPOM. The
+                        government has provided an 80% subsidy to farmers on equipment to maintain poultry. Thus, the
+                        subsidy will help purchase paddy straw choppers, happy seeders, straw management systems, and so
+                        on that would otherwise cost too much. Also, the government provides subsidies through state
+                        schemes for purchasing mulchers, cutters, spreaders, rotavator plows, etc.</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 order-1 pt-5">
+                    <img src="./img/trac.jpg">
+                    <br><br><br><br>
+                    <img src="./img/trac1.jpg" width="300px" class="img-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- irrigation subsidy -->
+    <section id="irriga">
+        <div class="container col-9">
+            <div class="row">
+                <h3 class="display-11">Irrigation Subsidy</h3>
+
+                <div class="col-lg-4 col-md-6 col-12 order-1 pt-5">
+                    <img src="./img/irr.jpg" width="300px" >
+                    <br><br><br><br>
+                    <img src="./img/irr1.jpg" width="300px" class="img-circle">
+                </div>
+                <div class="col-lg-8 col-md-6 col-12 order-1 pt-5">
+                    <br>
+                    <p>The government of India provides irrigation facilities at lower rates than market rates. It is the difference between the maintenance and operating cost of irrigation infrastructure in the State and the irrigation costs charged to farmers. It can work through public utilities like canals, tube wells, dams, etc., which are constructed by the government and charge farmers no or low cost for their use. It can also be done through low-cost private irrigation equipment such as pumping sets.&nbsp;
+                    </p>
+                    <br>
+                    <p>In India, micro-irrigation subsidy is covered under the Pradhan Mantri Krishi Sinchayee Yojana (known as PMKSY) encourages micro-irrigation and its type. Its benefits can be promoted through heavy subsidies on the base. Kisan Irrigation Subsidy is a subsidy for the use of canal water provided by the government.&nbsp;Irrigation subsidy is the difference between the cost of operating and maintaining the irrigation infrastructure in the State and the irrigation costs charged to the farmers.  </p>
+                    <br>
+                    <p>
+                        It can work by providing public goods like canals and dams that the government builds and charges low or no cost to farmers for their use. It can also be done through inexpensive private irrigation equipment such as pump sets. Irrigation subsidies have become unsustainable primarily because states have failed to develop a reasonable pricing model for canal water. Estimates showed that water prices did not cover more than 20 percent of canals’ operational and maintenance costs.&nbsp;
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- seed subsidy -->
+    <section id="seed">
+        <div class="container col-9">
+            <div class="row">
+                <div class="col-lg-8 col-md-6 col-12 order-1 pt-5">
+                    <h3 class="display-11">Agriculture & Equipment Subsidy</h3>
+                    <br>
+                    <p>  To upgrade the quality of farmers' saved seed, which is about 80-85% of the total seed used for crop production programs, at 50% of the seed cost to the Foundation/ Financial assistance is provided for the distribution of certified seeds. Crops are only for certified/standard seed production and for training farmers in seed production and technology.&nbsp;</p>
+                    <p>The seed produced in these villages is stored/preserved until the next sowing season. To encourage farmers to develop adequate quality storage capacity, farmers to make/obtain Pusa Bin/Mud made of paper pulp to store seed produced from frames on their farms. The seed subsidy is provided through the distribution of quality seeds which is less than the market price of the seed.&nbsp;                    </p>
+
+                    <p>This component covers the hilly areas of North Eastern states, including Sikkim, Jammu and Kashmir, Himachal Pradesh, Uttaranchal, and West Bengal. The component provides for reimbursement of 100% of the difference between the cost of rail and road transport for movement of seeds produced outside the State and the actual cost, subject to a maximum of Rs. 60 per quintal for intra-state movement of seed from the state capital/district headquarters to sale outlets/sale counters whichever is lower.&nbsp;</
+                    </p>
+                    <p> To ensure that seeds are available to the farmers in times of natural calamities like floods, droughts, etc., a need was felt to establish a seed bank to maintain their foundation, and certified seeds can be maintained. Different crops/varieties can be used for such emergency needs. Under this component, crop-wise seed targets are set for each participating organization to be maintained in the seed bank every year.&nbsp;</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 order-1 pt-5">
+                    <img src="./img/seed.jpg">
+                    <br><br><br><br>
+                    <img src="./img/seed1.jpg" width="300px" class="img-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <!-- export subsidy -->
+    <section id="export">
+        <div class="container col-9">
+            <div class="row">
+                <h3 class="display-11">Export Subsidy</h3>
+
+                <div class="col-lg-4 col-md-6 col-12 order-1 pt-5">
+                    <img src="./img/ex1.jfif" width="300px" >
+                    
+                </div>
+                <div class="col-lg-8 col-md-6 col-12 order-1 pt-5">
+                    <br>
+                    <p>This subsidy is given to farmers so that they can compete globally. When a farmer or exporter sells agricultural products in the foreign market, he earns money for himself, and the government earns foreign exchange. As a result, agricultural exports are generally promoted as long as they do not harm the domestic economy.&nbsp;                    <br>
+                    <p>Export subsidies are financial incentives provided to encourage exports. Export subsidies (direct payments, export credits, tax benefits) distort market prices, leading to above-market prices and overproduction in exporting countries and lower prices and less production in importing countries. In the short run, consumers in importing countries benefit from lower food prices. Export subsidies benefit countries where the production of subsidized products or their close substitutes is very low.&nbsp;                    <br>
+                    
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+<div class="container col-6">
+<button class="btn btn-success"><a  href="./farmerreg.html">Click me to Register as a farmer!!</a></button>
+
+
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

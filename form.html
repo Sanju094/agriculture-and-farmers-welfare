@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Feed Back</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand"><b><img src="./WTLogo.PNG" height="55px" width="100px"></b></a>
+            <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Home.html" style="color:black">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./scheme.html" style="color:black">SCHEMES</a>
+                    </li>
+
+                    <div class="dropdown">
+                        <a class=" btn dropdown-toggle light" style="color:black;" href="#" role="button"
+                            id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            MAJOR CROPS
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Wheat.html">Wheat</a></li><br>
+                            <li><a class="dropdown-item" href="Millets.html">Coarse Cereals / Millets </a></li><br>
+                            <li><a class="dropdown-item" href="Pulses.html">Pulses</a></li><br>
+                            <li><a class="dropdown-item" href="Rice.html">Rice</a></li><br>
+                            <li><a class="dropdown-item" href="Sugarcane.html">Sugarcane</a></li>
+                        </ul>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html" style="color:black">ABOUT</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./subsidy.html" style="color:black">SUBSIDY</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./shop.html" style="color:black">SHOP</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./form.html" style="color:black">FEEDBACK</a>
+                    </li>
+
+                    <div class="dropdown">
+                        <a class=" btn dropdown-toggle light" style="color:black;" href="./menu.html" role="button"
+                            id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            OTHER LINKS
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.tn.gov.in/department/2">Agriculture and
+                                    Farmers Welfare
+                                    department Tamilnadu</a></li><br>
+                            <li><a class="dropdown-item" href="https://agricoop.gov.in/">Department Of Agriculture And
+                                    Farmers
+                                    Welfare India </a></li><br>
+                            <li><a class="dropdown-item" href="https://agricoop.gov.in/">Department Of Agriculture And
+                                    Farmers
+                                    Welfare Haryana</a></li><br>
+                            <li><a class="dropdown-item" href="https://eands.dacnet.nic.in/">Directorate of E&S Farmer
+                                    Welfare</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </ul>
+                <button class="btn p-2 my-lg-0 my-2 bg-light"><a href="./menu.html" target="blank">LOG IN</a></button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            </div>
+        </div>
+    </nav>
+    <div class="container col-4">
+        <form>
+
+            <center>
+                <fieldset>
+                    <b>
+                        Feedback topic*: &nbsp;
+                        <select class="form-control">
+                            <option value>Complaint</option>
+                            <option value>Query</option>
+                            <option value>Suggestion</option>
+
+
+                        </select>
+                        </p>
+                        <p>
+                            Name: &nbsp; <input type="text" class="form-control" placeholder=Name name="fname">
+                        </p>
+
+                        Email:&nbsp; <input type="email" class="form-control" placeholder="Enter personal Mail Id"
+                            name="mail">
+                        </p>
+                        <p>Phone number: &nbsp; <input type="text" class="form-control"
+                                placeholder="Enter your phone number" name="ph" pattern="[0-9]{10}"><br></p>
+                        <p>
+                            Feedback&nbsp; <br><textarea rows="4" class="form-control" cols="70"
+                                placeholder="Message"> </textarea>
+                        </p>
+
+
+                        </p>
+
+                        <div>
+                            <a href="form.html"><button> Reset</button></a> &nbsp; <a
+                                href="03.png"><button>Submit</button></a>
+                        </div><br>
+                        <b> **Feedback provided are for departmental internal use only. If required, then department
+                            will respond you within 15 days of receiving your feedback.</p></b>
+                        <br><br><br><br><br><br><br>
+            </center></b>
+        </form>
+    </div>
+</body>
+
+</html>
+<style>
+    #navbar {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 10;
+        opacity: 0.6;
+    }
+
+    body {
+        background-color: #ffffff;
+        background-image: url(https://images.unsplash.com/photo-1609252509027-3928a66302fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwZmFybWVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+        background-repeat: no-repeat;
+        background-size: 100% 120%;
+
+        background-position: absolute;
+    }
+
+
+    form {
+
+        margin: auto;
+        padding: 50px;
+        color: rgb(0, 0, 0);
+    }
+</style>
